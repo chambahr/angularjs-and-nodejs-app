@@ -1,0 +1,19 @@
+.card {
+    margin: 80px auto;
+    padding: 30px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .jumbotron{
+    margin-top: 20px;
+  }
+  
+    

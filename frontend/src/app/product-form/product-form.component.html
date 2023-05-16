@@ -1,0 +1,53 @@
+<div class="container my-5">
+  <div class="card shadow" style="max-width: 900px; margin: auto;">
+    <div class="card-body">
+      <h2>{{ isNewProduct ? 'Add' : 'Edit' }} Product</h2>
+      <form (ngSubmit)="onSubmit()" #productForm="ngForm" enctype="multipart/form-data" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" 
+                  [(ngModel)]="name" 
+                  name="name"
+                  [ngModelOptions]="{standalone: true}"  
+                  class="form-control" id="name" 
+                  ng-required="true"
+                  placeholder="Enter product Name">
+        
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" 
+                  [(ngModel)]="price"
+                  name="price"
+                  ng-required="true"
+                  [ngModelOptions]="{standalone: true}"  
+                  class="form-control" 
+                  id="price" min="0">
+         
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description"  
+                    ng-required="true"
+                    class="form-control" 
+                    name="description" 
+                    [(ngModel)]="description"
+                    [ngModelOptions]="{standalone: true}" ></textarea>
+        </div>
+        <!-- <div class="form-group">
+          <label for="imageUrl">Image Upload</label>
+          <input type="file"   
+                  class="form-control" 
+                  name="imageUrl"
+                  ng-required="true"
+                  (change)="handleImageUpload($event)">
+                     
+        </div> -->
+
+        <div class="btnd">
+          <button type="submit" class="btn btn-primary">{{ isNewProduct ? 'Add Product' : 'Update Product' }}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

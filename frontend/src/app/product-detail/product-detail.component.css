@@ -1,0 +1,29 @@
+.container {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.container title {
+    float: inline-end;
+    justify-content: space-between;
+}
+.container title a {
+    display: block;
+    float: right;
+    justify-content: space-between;
+}
+
+.suggestedProduct{
+    margin-bottom: 50px;
+}
+
+.suggestedProduct a {
+    display: block;
+    float: right;
+}
+.addtocart {
+    display: block;
+    float: right;
+    justify-content: space-evenly;
+}
